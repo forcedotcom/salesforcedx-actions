@@ -3,7 +3,7 @@
 set -e
 
 # Capture output
-output=$( sh -c "sfdx $*" )
+result=$( sh -c "sfdx $*" )
 
-# Write output to STDOUT
-echo "$output"
+# Write output to output variable
+echo ::set-output name=result::$result
