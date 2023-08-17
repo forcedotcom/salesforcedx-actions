@@ -1,4 +1,4 @@
-FROM salesforce/salesforcedx
+FROM salesforce/cli:latest-full
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
